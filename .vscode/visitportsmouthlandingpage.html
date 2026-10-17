@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Outer box with futuristic cut corners */
+    .futuristic-border {
+      position: relative;
+      max-width: 500px;
+      margin: 30px auto;
+      padding: 30px;
+      background: rgba(17, 20, 30, 0.85); /* Dark background so text stands out on brown */
+      border-radius: 8px;
+      
+      /* Sci-fi angled corner cuts */
+      clip-path: polygon(
+        0 20px, 20px 0, 
+        calc(100% - 20px) 0, 100% 20px, 
+        100% calc(100% - 20px), calc(100% - 20px) 100%, 
+        20px 100%, 0 calc(100% - 20px)
+      );
+      
+      /* Cyan neon glow outline */
+      outline: 2px solid #00f0ff;
+      outline-offset: -2px;
+      box-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
+    }
+
+    /* Glowing corner accents */
+    .corner {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      border: 3px solid #00f0ff;
+      z-index: 2;
+    }
+
+    .top-left { top: 0; left: 0; border-right: none; border-bottom: none; }
+    .top-right { top: 0; right: 0; border-left: none; border-bottom: none; }
+    .bottom-left { bottom: 0; left: 0; border-right: none; border-top: none; }
+    .bottom-right { bottom: 0; right: 0; border-left: none; border-top: none; }
+
+    /* Makes your image fit inside the card cleanly */
+    .card-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      border: 1px solid #00f0ff;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 22px;
+      background: #3b82f6;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      border: 2px solid #00f0ff;
+      box-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 0 16px rgba(0, 240, 255, 0.6);
+    }
+
+    .update-notice {
+      margin-top: 24px;
+      padding: 12px 16px;
+      border: 1px solid #00f0ff;
+      border-radius: 6px;
+      background: rgba(7, 26, 53, 0.8);
+      box-shadow: 0 0 10px rgba(0, 240, 255, 0.25);
+      color: #e0f2fe;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body style="background-color: #3b82f6;">
+
+    <!-- FUTURISTIC BORDER STARTS HERE -->
+    <div class="futuristic-border">
+      <div class="corner top-left"></div>
+      <div class="corner top-right"></div>
+      <div class="corner bottom-left"></div>
+      <div class="corner bottom-right"></div>
+
+      <div class="card-content">
+        <!-- YOUR ORIGINAL CODE IS HERE -->
+        <h1 style="color: rgb(0, 174, 255);">Visit Portsmouth</h1>
+        <h3 style="color: rgb(0, 255, 4);">Your guide to the best of Portsmouth</h3>
+        <p style="color: rgb(55, 0, 255);">Welcome to Portsmouth!, this is the one and only guide you'll need to explore the best of what Portsmouth has to offer.</p>
+        
+
+        <img src="https://images.pexels.com/photos/38535865/pexels-photo-38535865.jpeg" alt="Portsmouth" style="border-radius: 6px; border: 1px solid #00f0ff;">
+
+        <div>
+          <a class="cta-button" href="visitportsmouthspinnakertower.html">Visit the Spinnaker Tower</a>
+        </div>
+        <div>
+          <a class="cta-button" href="../visitportsmouthhistoricdockyard.html">Visit Portsmouth Historic Dockyard</a>
+        </div>
+        <div>
+          <a class="cta-button" href="../visitportsmouthgunwharfquays.html">Visit Gunwharf Quays</a>
+        </div>
+        <p class="update-notice">We're still updating our website and adding more Portsmouth landmarks. Check back soon!</p>
+
+     </div>
+    </div>
+    <!-- FUTURISTIC BORDER ENDS HERE -->
+
+</body>
+</html>

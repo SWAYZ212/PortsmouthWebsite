@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit Portsmouth Gunwharf Quays</title>
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 32px 20px;
+      box-sizing: border-box;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(ellipse at top, #164e8a 0%, #071a35 70%);
+      color: #e0f2fe;
+      font-family: Arial, sans-serif;
+    }
+
+    main {
+      position: relative;
+      width: min(100%, 720px);
+      padding: 32px;
+      box-sizing: border-box;
+      border: 2px solid #38bdf8;
+      border-radius: 12px;
+      background: rgba(7, 26, 53, 0.9);
+      box-shadow: 0 0 12px #0ea5e9, inset 0 0 20px rgba(14, 165, 233, 0.12);
+    }
+
+    main::before,
+    main::after {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      content: "";
+      border-color: #a5f3fc;
+      border-style: solid;
+    }
+
+    main::before {
+      top: 7px;
+      left: 7px;
+      border-width: 2px 0 0 2px;
+    }
+
+    main::after {
+      right: 7px;
+      bottom: 7px;
+      border-width: 0 2px 2px 0;
+    }
+
+    h1,
+    h2 {
+      color: #7dd3fc;
+      text-shadow: 0 0 10px rgba(56, 189, 248, 0.55);
+    }
+
+    hr {
+      height: 1px;
+      margin: 24px 0;
+      border: 0;
+      background: linear-gradient(90deg, transparent, #38bdf8 15%, #a5f3fc 50%, #38bdf8 85%, transparent);
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.8);
+    }
+
+    p {
+      line-height: 1.7;
+    }
+
+    .back-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 12px;
+      padding: 12px 20px;
+      border: 1px solid #67e8f9;
+      border-radius: 6px;
+      background: linear-gradient(135deg, #0369a1, #1d4ed8);
+      box-shadow: 0 0 12px rgba(56, 189, 248, 0.45), inset 0 0 10px rgba(125, 211, 252, 0.15);
+      color: #f0f9ff;
+      font-weight: bold;
+      letter-spacing: 0.06em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .back-button:hover {
+      transform: translateY(-2px);
+      background: linear-gradient(135deg, #0284c7, #2563eb);
+      box-shadow: 0 0 18px rgba(56, 189, 248, 0.7);
+    }
+
+    .back-button:focus-visible {
+      outline: 2px solid #a5f3fc;
+      outline-offset: 4px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Visit Portsmouth Gunwharf Quays</h1>
+    <hr>
+
+    <!-- Replace this starter section with your Gunwharf Quays page content. -->
+    <section>
+      <h2>What is Gunwharf Quays?</h2>
+      
+      <img src="https://images.pexels.com/photos/7349505/pexels-photo-7349505.jpeg" alt="Gunwharf Quays" style="width: 100%; max-width: 600px; border-radius: 6px; border: 1px solid #00f0ff; margin-bottom: 16px;">
+      
+      
+      <p>Gunwharf Quays is a premier waterfront shopping and lifestyle destination located in Portsmouth, England, right next to the historic harbor. Developed on the site of a former Royal Navy ordnance yard, it successfully blends its rich naval heritage with modern leisure.</p>
+      <ul>
+        <li>Designer Outlet Shopping: Home to over 90 high-end fashion and lifestyle brands offering significant discounts, making it a major retail hub on the south coast.</li>
+        <li>Dining and Entertainment: A vibrant selection of waterside restaurants, bars, and cafes, alongside a multi-screen cinema, bowling alley, and casino.</li>
+        <li>The Spinnaker Tower: Soaring 170 metres into the sky above the harbor, this iconic landmark offers breathtaking panoramic views of Portsmouth, the Solent, and the Isle of Wight.</li>
+        <li>Maritime Atmosphere: Preserved historic cranes and fortifications from its days as a naval armaments depot, creating a unique backdrop overlooking Portsmouth Harbour and HMS Warrior.</li>
+      </ul>
+    </section>
+
+    <a class="back-button" href=".vscode/visitportsmouthlandingpage.html">Back to Visit Portsmouth</a>
+  </main>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit Portsmouth Spinnaker Tower</title>
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 32px 20px;
+      box-sizing: border-box;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(ellipse at top, #164e8a 0%, #071a35 70%);
+      color: #e0f2fe;
+      font-family: Arial, sans-serif;
+    }
+
+    main {
+      position: relative;
+      width: min(100%, 720px);
+      padding: 32px;
+      box-sizing: border-box;
+      border: 2px solid #38bdf8;
+      border-radius: 12px;
+      background: rgba(7, 26, 53, 0.9);
+      box-shadow: 0 0 12px #0ea5e9, inset 0 0 20px rgba(14, 165, 233, 0.12);
+    }
+
+    main::before,
+    main::after {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      content: "";
+      border-color: #a5f3fc;
+      border-style: solid;
+    }
+
+    main::before {
+      top: 7px;
+      left: 7px;
+      border-width: 2px 0 0 2px;
+    }
+
+    main::after {
+      right: 7px;
+      bottom: 7px;
+      border-width: 0 2px 2px 0;
+    }
+
+    h1,
+    h2 {
+      color: #7dd3fc;
+      text-shadow: 0 0 10px rgba(56, 189, 248, 0.55);
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #38bdf8;
+      border-radius: 6px;
+      box-shadow: 0 0 12px rgba(14, 165, 233, 0.55);
+    }
+
+    p {
+      line-height: 1.7;
+    }
+
+    .back-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 12px;
+      padding: 12px 20px;
+      border: 1px solid #67e8f9;
+      border-radius: 6px;
+      background: linear-gradient(135deg, #0369a1, #1d4ed8);
+      box-shadow: 0 0 12px rgba(56, 189, 248, 0.45), inset 0 0 10px rgba(125, 211, 252, 0.15);
+      color: #f0f9ff;
+      font-weight: bold;
+      letter-spacing: 0.06em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .back-button:hover {
+      transform: translateY(-2px);
+      background: linear-gradient(135deg, #0284c7, #2563eb);
+      box-shadow: 0 0 18px rgba(56, 189, 248, 0.7);
+    }
+
+    .back-button:focus-visible {
+      outline: 2px solid #a5f3fc;
+      outline-offset: 4px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Visit Portsmouth Spinnaker Tower</h1>
+    <img src="https://images.pexels.com/photos/39865183/pexels-photo-39865183.jpeg" alt="Spinnaker Tower">
+    <h2>Here's a summary of the famed Spinnaker Tower!</h2>
+    <p>The Spinnaker Tower is an iconic 170-metre (558 ft) landmark observation tower located on the waterfront of Portsmouth, England. Opened in 2005 as the centerpiece of the Gunwharf Quays and Portsmouth Harbour redevelopment, its distinctive design reflects the city's rich maritime heritage by mimicking a billowing spinnaker sail. The tower features three observation decks—including a glass "Sky Walk" floor located 100 metres above sea level and an open-air "Sky Garden" at 110 metres—that offer sweeping, 360-degree panoramic views spanning up to 23 miles across Portsmouth, the Solent, the Isle of Wight, and the South Downs.</p>
+    <a class="back-button" href="visitportsmouthlandingpage.html">Back to Visit Portsmouth</a>
+  </main>
+</body>
+</html>
