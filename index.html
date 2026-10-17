@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit Portsmouth</title>
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 24px;
+      box-sizing: border-box;
+      background: radial-gradient(ellipse at top, #164e8a 0%, #071a35 70%);
+      color: #e0f2fe;
+      font-family: Arial, sans-serif;
+    }
+
+    .futuristic-border {
+      position: relative;
+      width: min(100%, 500px);
+      margin: 30px auto;
+      padding: 30px;
+      box-sizing: border-box;
+      border: 2px solid #00f0ff;
+      border-radius: 8px;
+      background: rgba(17, 20, 30, 0.85);
+      box-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
+      clip-path: polygon(
+        0 20px, 20px 0,
+        calc(100% - 20px) 0, 100% 20px,
+        100% calc(100% - 20px), calc(100% - 20px) 100%,
+        20px 100%, 0 calc(100% - 20px)
+      );
+    }
+
+    .corner {
+      position: absolute;
+      z-index: 2;
+      width: 15px;
+      height: 15px;
+      border: 3px solid #00f0ff;
+      pointer-events: none;
+    }
+
+    .top-left { top: 0; left: 0; border-right: 0; border-bottom: 0; }
+    .top-right { top: 0; right: 0; border-left: 0; border-bottom: 0; }
+    .bottom-left { bottom: 0; left: 0; border-right: 0; border-top: 0; }
+    .bottom-right { right: 0; bottom: 0; border-left: 0; border-top: 0; }
+
+    h1,
+    h2 {
+      color: #7dd3fc;
+      text-shadow: 0 0 10px rgba(56, 189, 248, 0.55);
+    }
+
+    p {
+      color: #e0f2fe;
+      line-height: 1.6;
+    }
+
+    .card-content img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #00f0ff;
+      border-radius: 6px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 22px;
+      border: 2px solid #00f0ff;
+      border-radius: 8px;
+      background: #3b82f6;
+      box-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+      color: #f0f9ff;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 0 16px rgba(0, 240, 255, 0.6);
+    }
+
+    .cta-button:focus-visible {
+      outline: 2px solid #a5f3fc;
+      outline-offset: 4px;
+    }
+
+    .update-notice {
+      margin-top: 24px;
+      padding: 12px 16px;
+      border: 1px solid #00f0ff;
+      border-radius: 6px;
+      background: rgba(7, 26, 53, 0.8);
+      box-shadow: 0 0 10px rgba(0, 240, 255, 0.25);
+    }
+  </style>
+</head>
+<body>
+  <main class="futuristic-border">
+    <span class="corner top-left" aria-hidden="true"></span>
+    <span class="corner top-right" aria-hidden="true"></span>
+    <span class="corner bottom-left" aria-hidden="true"></span>
+    <span class="corner bottom-right" aria-hidden="true"></span>
+
+    <div class="card-content">
+      <h1>Visit Portsmouth</h1>
+      <h2>Your guide to the best of Portsmouth</h2>
+      <p>Welcome to Portsmouth! This is the one and only guide you'll need to explore the best of what Portsmouth has to offer.</p>
+
+      <img src="https://images.pexels.com/photos/38535865/pexels-photo-38535865.jpeg" alt="Portsmouth">
+
+      <div>
+        <a class="cta-button" href="visitportsmouthspinnakertower.html">Visit the Spinnaker Tower</a>
+      </div>
+      <div>
+        <a class="cta-button" href="visitportsmouthhistoricdockyard.html">Visit Portsmouth Historic Dockyard</a>
+      </div>
+      <div>
+        <a class="cta-button" href="visitportsmouthgunwharfquays.html">Visit Gunwharf Quays</a>
+      </div>
+
+      <p class="update-notice">We're still updating our website and adding more Portsmouth landmarks. Check back soon!</p>
+    </div>
+  </main>
+</body>
+</html>
