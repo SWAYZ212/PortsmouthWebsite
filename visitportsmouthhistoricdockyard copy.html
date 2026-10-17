@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit Portsmouth Historic Dockyard</title>
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 32px 20px;
+      box-sizing: border-box;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(ellipse at top, #164e8a 0%, #071a35 70%);
+      color: #e0f2fe;
+      font-family: Arial, sans-serif;
+    }
+
+    main {
+      position: relative;
+      width: min(100%, 720px);
+      padding: 32px;
+      box-sizing: border-box;
+      border: 2px solid #38bdf8;
+      border-radius: 12px;
+      background: rgba(7, 26, 53, 0.9);
+      box-shadow: 0 0 12px #0ea5e9, inset 0 0 20px rgba(14, 165, 233, 0.12);
+    }
+
+    main::before,
+    main::after {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      content: "";
+      border-color: #a5f3fc;
+      border-style: solid;
+    }
+
+    main::before {
+      top: 7px;
+      left: 7px;
+      border-width: 2px 0 0 2px;
+    }
+
+    main::after {
+      right: 7px;
+      bottom: 7px;
+      border-width: 0 2px 2px 0;
+    }
+
+    h1,
+    h2 {
+      color: #7dd3fc;
+      text-shadow: 0 0 10px rgba(56, 189, 248, 0.55);
+    }
+
+    p {
+      color: #e0f2fe;
+      line-height: 1.7;
+    }
+
+    .back-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 12px;
+      padding: 12px 20px;
+      border: 1px solid #67e8f9;
+      border-radius: 6px;
+      background: linear-gradient(135deg, #0369a1, #1d4ed8);
+      box-shadow: 0 0 12px rgba(56, 189, 248, 0.45), inset 0 0 10px rgba(125, 211, 252, 0.15);
+      color: #f0f9ff;
+      font-weight: bold;
+      letter-spacing: 0.06em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .back-button:hover {
+      transform: translateY(-2px);
+      background: linear-gradient(135deg, #0284c7, #2563eb);
+      box-shadow: 0 0 18px rgba(56, 189, 248, 0.7);
+    }
+
+    .back-button:focus-visible {
+      outline: 2px solid #a5f3fc;
+      outline-offset: 4px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Come to visit the Portsmouth Historic Dockyard!</h1>
+    <h2>Learn about the Portsmouth Historic Dockyard</h2>
+    <p>The Portsmouth Historic Dockyard is a maritime museum and attraction located in Portsmouth, England. It showcases the rich naval history of the city and offers visitors a chance to explore historic ships and exhibits.</p>
+    <img src="https://images.pexels.com/photos/35056191/pexels-photo-35056191.jpeg" alt="Portsmouth Historic Dockyard" style="border-radius: 6px; border: 1px solid #00f0ff; width: 100%; max-width: 600px; margin-top: 20px;">
+    <h2>Full summary of the Dockyard</h2></p>
+    <p>Portsmouth Historic Dockyard is a world-renowned maritime heritage site located within an active naval base on the south coast of England. It stands as the beating heart of British naval history, seamlessly blending centuries of maritime tradition with modern storytelling and ongoing conservation.</p>
+    <h3> Key highlights of the Dockyard </h3>
+    <ul>
+        <li>HMS Victory: The Royal Navy's most celebrated flagship, famous for carrying Vice Admiral Lord Nelson to victory at the Battle of Trafalgar in 1805. Visitors can walk the historic decks and witness major ongoing conservation work preserving the oldest commissioned warship in the world.</li>
+        <li>The Mary Rose Museum: A cutting-edge museum housing the remarkable remains of King Henry VIII’s favourite Tudor warship, which sank in the Solent in 1545 and was famously raised from the seabed in 1982, alongside thousands of perfectly preserved Tudor artifacts.</li>
+        <li>HMS Warrior: Launched in 1860, this magnificent iron-hulled warship was the crown jewel of Queen Victoria's Black Battle Fleet, combining steam and sail power to revolutionise naval warfare.</li>
+        <li>HMS M33: One of the last surviving British warships from the First World War, offering a unique look at the Gallipoli campaign and life at sea during the conflict.</li>
+        <li>The National Museum of the Royal Navy: An extensive collection of galleries and exhibitions detailing hundreds of years of naval dominance, strategy, and personal stories of those who served.</li>
+    </ul>
+    <a class="back-button" href=".vscode/visitportsmouthlandingpage.html">Back to Visit Portsmouth</a>
+  </main>
+</body>
+</html>
